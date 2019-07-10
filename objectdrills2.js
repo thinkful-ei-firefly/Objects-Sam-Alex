@@ -1,3 +1,5 @@
+'use strict';
+
 const properties = {
     foo: 'boo',
     bar: 'soap',
