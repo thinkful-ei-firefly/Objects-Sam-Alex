@@ -1,3 +1,4 @@
+
 const sampleObj = {
     foo: 'foo',
     bar: 'bar',

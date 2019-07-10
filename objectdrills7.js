@@ -15,10 +15,10 @@ function createCharacter(name, nickname, race, origin, attack, defense, weapon) 
     evaluateFight: function(character) {
       let x = this.attack - character.defense;
       let y = character.attack - this.defense;
-      if (this.defense > character.attack) {
+      if (y<0) {
         y = 0;
       } 
-      if (character.defense > this.attack) {
+      if (x<0) {
         x = 0;
       }
       console.log(`Your opponent takes ${x} damage and you receive ${y} damage`)

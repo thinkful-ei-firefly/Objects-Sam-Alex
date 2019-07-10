@@ -1,3 +1,5 @@
+'use strict';
+
 const studentData = [
     {
       name: 'Tim',

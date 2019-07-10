@@ -22,10 +22,11 @@ const decode = message => {
     // } else {
     //   return ' ';
     // }
-    if (word[0] !== 'a' && word[0] !== 'b' && word[0] !== 'c' && word[0] !== 'd') {
+    let newVar = translator[word[0]];
+    if (!newVar) {
       return ' ';
     }
-    return word[translator[word[0]]-1];
+    return word[newVar-1];
   });
   return answer.join('');
 };
